@@ -34,7 +34,14 @@ if __name__ == "__main__":
     #print(parsed_json['data'][0]['description'])
     #print(parsed_json['data'][0]['directionsInfo'])
     
-    total = int(parsed_json['total']) # The number of parks that were returned
+    pokemon_name = parsed_json['name']
+    print(f"Name: {pokemon_name}")
     
-    for park in parsed_json['data']:
-        print (park)
+    flavor_text_entries = parsed_json['flavor_text_entries']
+    for entry in flavor_text_entries:
+        if entry['language']['name']== 'en': #english
+            print(f"Flavor Text (English): {entry['flavor_text']}")
+            break
+        
+    base_happiness = parsed_json['base_happiness']
+    print(f"Base Happiness: {base_happiness}")
