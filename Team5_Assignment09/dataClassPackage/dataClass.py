@@ -1,4 +1,3 @@
-# dataClass.py
 # Name: Matthew Lisowsky, Harrison Moore, Maddy Wogomon
 # email: lisowsmd@mail.uc.edu, wogomomr@mail.uc.edu, moorehc@mail.uc.edu
 # Assignment Number: Assignment 09
@@ -11,6 +10,7 @@
 
 # imports (ex: from functionPackage.functions import *)
 
+#Matthew added the dictionary functionality and integrated it to the main.
 # Iterating a dictionary function
 def iterate_dictionary(myDictionary):
     for k, v in myDictionary.items():
